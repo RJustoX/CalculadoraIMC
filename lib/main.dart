@@ -115,11 +115,11 @@ class _Home extends State<Home> {
                   fontSize: 25,
                 ),
                 controller: pesoControl,
-                // ignore: missing_return
                 validator: (value) {
                   if (value.isEmpty) {
                     return "Insira seu peso";
                   }
+                  return null;
                 },
               ),
               TextFormField(
@@ -137,11 +137,11 @@ class _Home extends State<Home> {
                   fontSize: 25,
                 ),
                 controller: alturaControl,
-                // ignore: missing_return
                 validator: (value) {
                   if (value.isEmpty) {
                     return "Insira sua altura";
                   }
+                  return null;
                 },
               ),
               Padding(
